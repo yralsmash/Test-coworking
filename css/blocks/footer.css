@@ -1,0 +1,16 @@
+.footer {
+  background: #2b2b40;
+  height: 77px;
+  color: #fff;
+  font-size: 14px;
+}
+
+.footer-text-link {
+  color: #fff;
+  font-weight: bold;
+}
+
+.footer .container {
+  justify-content: space-between;
+  align-items: center;
+}

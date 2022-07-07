@@ -1,0 +1,12 @@
+.contacts {
+  margin: 13px 20px 0 0;
+}
+
+.contacts__phone {
+  margin: 0 0 6px 0;
+  color: #fff;
+  font-family: GothamPro;
+  font-size: 21px;
+  font-weight: bold;
+  text-decoration: none;
+}

@@ -1,0 +1,36 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  margin-bottom: 70px;
+  width: 100%;
+}
+
+.pagination__pages {
+  color: #656464;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination__list {
+  display: flex;
+  font-weight: bold;
+}
+
+.pagination__button {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.pagination__button--active {
+  background: #2b2b40;
+  color: #fff;
+  border-radius: 3px;
+
+}

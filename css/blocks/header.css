@@ -1,0 +1,13 @@
+.header {
+  background: #2b2b40;
+  height: 77px;
+}
+
+.header--margin {
+  margin-bottom: 45px;
+}
+
+.header .container {
+  justify-content:space-between;
+  align-items: center;
+}

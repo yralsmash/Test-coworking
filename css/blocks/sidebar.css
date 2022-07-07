@@ -1,0 +1,56 @@
+.nav {
+  width: 200px;
+}
+
+.nav__item {
+  margin-bottom: 30px;
+
+}
+
+.nav__link {
+  text-decoration: none;
+  font: bold 12px Gotham Pro;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: #cb2376;
+}
+
+.nav__link:hover {
+  color: #000;
+}
+
+.nav__link:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 18px;
+  background: url('../../img/main_icon.png') center center no-repeat;
+  margin-right: 17px;
+}
+
+.nav__link:hover:before {
+  background-image: url('../../img/main_icon-hover.png');
+}
+
+.nav__link--feedback:before {
+  background-image: url('../../img/feedback_icon.png');
+}
+
+.nav__link--feedback:hover:before {
+  background-image: url('../../img/feedback_icon-hover.png');
+}
+
+.nav__link--tariffs:before {
+  background-image: url('../../img/tariffs_icon.png');
+}
+
+.nav__link--tariffs:hover:before {
+  background-image: url('../../img/tariffs_icon-hover.png');
+}
+
+.nav__text {
+  max-width: 100px;
+  display: inline-block;
+  vertical-align: middle;
+}

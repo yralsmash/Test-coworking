@@ -1,0 +1,37 @@
+.breadcrumbs {
+  opacity: 0.8;
+  margin-top: 10px;
+  font-family: 'Gotham Pro';
+  line-height: 18px;
+  font-size: 14px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: italic;
+  letter-spacing: normal;
+  color: rgb(38, 36, 36);
+}
+
+.breadcrumbs__list {
+  display: flex;
+}
+
+.breadcrumbs__link {
+  color: rgb(203, 35, 118);
+  text-decoration: none;
+  font-style: italic;
+}
+
+.breadcrumbs__link:hover {
+  transition: 0.5s;
+  text-decoration: underline;
+  opacity: 1;
+}
+
+.breadcrumbs__text {
+  font-style: italic;
+}
+
+.breadcrumbs__text:before {
+  margin-left: 5px;
+  content: "/";
+}
