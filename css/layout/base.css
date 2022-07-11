@@ -11,6 +11,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+img {
+  max-width: 100%;
+  display: block;
+}
+
 ul {
   list-style: none;
   margin: 0;
@@ -37,16 +42,28 @@ p {
   margin: 0;
 }
 
+address {
+  font-style: normal;
+}
+
 * {
   box-sizing: border-box;
 }
 
 .wrapper {
-  /* overflow: hidden; */
   height: 100%;
   min-width: 1100px;
   display: flex;
   flex-direction: column;
+}
+
+.wrapper__auth {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url("../../img/index/Bg.jpg") center center / cover no-repeat;
 }
 
 .wrapper__content {
@@ -57,4 +74,8 @@ p {
   display: flex;
   width: 1100px;
   margin: 0 auto;
+}
+
+.container__inner {
+  width: 700px;
 }

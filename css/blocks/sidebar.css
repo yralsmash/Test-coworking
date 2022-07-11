@@ -4,49 +4,64 @@
 
 .nav__item {
   margin-bottom: 30px;
-
 }
 
 .nav__link {
+  position: relative;
   text-decoration: none;
   font: bold 12px Gotham Pro;
   letter-spacing: 1.2px;
   text-transform: uppercase;
   color: #cb2376;
+  margin-left: 37px;
 }
 
 .nav__link:hover {
   color: #000;
+  transition: 0.5s;
 }
 
 .nav__link:before {
   content: '';
-  display: inline-block;
-  vertical-align: middle;
+  position: absolute;
+  display: block;
+  top: 50%;
+  transform: translate(-50%, -50%);
   width: 20px;
   height: 18px;
-  background: url('../../img/main_icon.png') center center no-repeat;
-  margin-right: 17px;
+  background: url('../../img/sprite.png') -90px -45px no-repeat;
 }
 
-.nav__link:hover:before {
-  background-image: url('../../img/main_icon-hover.png');
+.nav__link:after {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 18px;
+  background: url('../../img/sprite.png') -90px -10px no-repeat;
+}
+
+.nav__link:hover:after {
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.nav__link--feedback:after {
+  background: url('../../img/sprite.png') -10px -10px;
 }
 
 .nav__link--feedback:before {
-  background-image: url('../../img/feedback_icon.png');
+  background: url('../../img/sprite.png') -50px -10px;
 }
 
-.nav__link--feedback:hover:before {
-  background-image: url('../../img/feedback_icon-hover.png');
+.nav__link--tariffs:after {
+  background: url('../../img/sprite.png') -10px -48px;
 }
 
 .nav__link--tariffs:before {
-  background-image: url('../../img/tariffs_icon.png');
-}
-
-.nav__link--tariffs:hover:before {
-  background-image: url('../../img/tariffs_icon-hover.png');
+  background: url('../../img/sprite.png') -49px -48px;
 }
 
 .nav__text {

@@ -11,12 +11,17 @@
   margin-bottom: 55px;
 }
 
+/* .news__item-avatar-pic {
+  width: 20%;
+  margin-right: 2%;
+} */
+
 .news__item-avatar-img {
   width: 160px;
   height: 160px;
   overflow: hidden;
   border-radius: 50%;
-  margin-right: 20px;
+  margin-right: 2%;
 }
 
 .news__item-avatar {
@@ -26,9 +31,9 @@
 }
 
 .text-block {
+  width: 78%;
   display: flex;
   flex-direction: column;
-  height: 166px;
   font-size: 18px;
 }
 

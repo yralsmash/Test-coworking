@@ -1,7 +1,62 @@
-.schedule__text {
-  font-family: OpenSans;
+.schedule {
+  position: relative;
   font-size: 14px;
   font-weight: bold;
+  display: inline-block;
+}
+
+.schedule:hover .schedule__dropdown {
+  opacity: 1;
+  left: -48px;
+}
+
+.schedule:hover .schedule__work{
+  transition: 0.5s;
+  color: rgb(203, 35, 118);
+}
+
+.schedule__work {
+  font-family: Open Sans;
   color: rgba(203, 35, 118, 0.7);
   text-decoration: underline;
+}
+
+
+.schedule__dropdown {
+  transition: opacity 0.5s;
+  position: absolute;
+  top: 100%;
+  opacity: 0;
+  left: -9999px;
+  margin-top: 20px;
+  color: #cb2376;
+  background: #fff;
+  border-radius: 3px;
+  width: 163px;
+  height: 81px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  padding-left: 11px;
+  box-shadow: 2.5px 4.3px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.schedule__dropdown:before {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 30px;
+  left: 0;
+  right: 0;
+  top: -25px;
+}
+
+.schedule__text {
+  text-decoration: none;
+}
+
+.schedule__text-lunch {
+  font-weight: 400;
+  color: #262424;
 }

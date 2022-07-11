@@ -1,5 +1,4 @@
 .breadcrumbs {
-  opacity: 0.8;
   margin-top: 10px;
   font-family: 'Gotham Pro';
   line-height: 18px;
@@ -19,6 +18,7 @@
   color: rgb(203, 35, 118);
   text-decoration: none;
   font-style: italic;
+  opacity: 0.7;
 }
 
 .breadcrumbs__link:hover {

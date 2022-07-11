@@ -18,13 +18,20 @@
               <img src="./img/logo-fig.png" alt="Logo" class="logo__pic">
             </a>
           </div>
-          <div class="contacts">
+          <address class="contacts">
             <a href="tel:88000039210" class="contacts__phone">8 (800) 00-392-10</a>
-            <div class="schedule">
-              <a href="#" class="schedule__text">График работы</a>
-              <div class="schedule__block"></div>
-            </div>
-          </div>
+            <span class="schedule">
+              <a href="#" class="schedule__work">График работы</a>
+              <div class="schedule__dropdown">
+                <span class="schedule__text">
+                  пн-вс: 09:00-20:00
+                </span>
+                <span class="schedule__text-lunch">
+                  обед:14:00-14:30
+                </span>
+              </div>
+            </span>
+          </address>
         </div>
       </header>
       <div class="container">
@@ -76,10 +83,10 @@
                   <time class="text-time">12.10.2016</time>
                   <h4 class="text-title">Олег Павлов</h4>
                   <p class="text">
-                    Пользуемся услугами коворкинга стабильно раз в неделю, когда проводим<br/>
-                    совещания директоров. Получается намного дешевле и удобно всем<br/>
-                    добираться. Единственное пожелание – расширить меню, потому что<br/>
-                    бизнес-ланчи – это все таки средний уровень, а хочется чего то более<br/>
+                    Пользуемся услугами коворкинга стабильно раз в неделю, когда проводим
+                    совещания директоров. Получается намного дешевле и удобно всем
+                    добираться. Единственное пожелание – расширить меню, потому что
+                    бизнес-ланчи – это все таки средний уровень, а хочется чего то более
                     вкусного, чтобы можно было угощать начальство.
                   </p>
                 </div>
@@ -93,10 +100,10 @@
                   <time class="text-time">12.10.2016</time>
                   <h4 class="text-title">Олег Павлов</h4>
                   <p class="text">
-                    Пользуемся услугами коворкинга стабильно раз в неделю, когда проводим<br/>
-                    совещания директоров. Получается намного дешевле и удобно всем<br/>
-                    добираться. Единственное пожелание – расширить меню, потому что<br/>
-                    бизнес-ланчи – это все таки средний уровень, а хочется чего то более<br/>
+                    Пользуемся услугами коворкинга стабильно раз в неделю, когда проводим
+                    совещания директоров. Получается намного дешевле и удобно всем
+                    добираться. Единственное пожелание – расширить меню, потому что
+                    бизнес-ланчи – это все таки средний уровень, а хочется чего то более
                     вкусного, чтобы можно было угощать начальство.
                   </p>
                 </div>
@@ -110,10 +117,10 @@
                   <time class="text-time">12.10.2016</time>
                   <h4 class="text-title">Олег Павлов</h4>
                   <p class="text">
-                    Пользуемся услугами коворкинга стабильно раз в неделю, когда проводим<br/>
-                    совещания директоров. Получается намного дешевле и удобно всем<br/>
-                    добираться. Единственное пожелание – расширить меню, потому что<br/>
-                    бизнес-ланчи – это все таки средний уровень, а хочется чего то более<br/>
+                    Пользуемся услугами коворкинга стабильно раз в неделю, когда проводим
+                    совещания директоров. Получается намного дешевле и удобно всем
+                    добираться. Единственное пожелание – расширить меню, потому что
+                    бизнес-ланчи – это все таки средний уровень, а хочется чего то более
                     вкусного, чтобы можно было угощать начальство.
                   </p>
                 </div>
@@ -127,10 +134,10 @@
                   <time class="text-time">12.10.2016</time>
                   <h4 class="text-title">Олег Павлов</h4>
                   <p class="text">
-                    Пользуемся услугами коворкинга стабильно раз в неделю, когда проводим<br/>
-                    совещания директоров. Получается намного дешевле и удобно всем<br/>
-                    добираться. Единственное пожелание – расширить меню, потому что<br/>
-                    бизнес-ланчи – это все таки средний уровень, а хочется чего то более<br/>
+                    Пользуемся услугами коворкинга стабильно раз в неделю, когда проводим
+                    совещания директоров. Получается намного дешевле и удобно всем
+                    добираться. Единственное пожелание – расширить меню, потому что
+                    бизнес-ланчи – это все таки средний уровень, а хочется чего то более
                     вкусного, чтобы можно было угощать начальство.
                   </p>
                 </div>
@@ -178,12 +185,61 @@
       </section>
       <section class="feedback">
         <div class="container">
-          <form action="" class="form">
-            <h1 class="title form--title">
-              Оставить отзыв
-            </h1>
-            label.
-          </form>
+          <div class="container__inner">
+            <form action="" class="form">
+              <h1 class="title form--title">
+                Оставить отзыв
+              </h1>
+              <div class="form__container">
+                <div class="form__row">
+                  <label class="form__input">
+                    <div class="form__input-title">
+                      Ваше имя
+                    </div>
+                    <input type="text" placeholder="Андрей" class="form__input-elem">
+                  </label>
+  
+                  <label class="form__input">
+                    <div class="form__input-title">
+                      Ссылка на профиль VK
+                    </div>
+                    <input type="text" placeholder="vk.com/example" class="form__input-elem">
+                  </label>
+                </div>
+                <div class="form__row">
+                  <label class="form__input">
+                    <div class="form__input-title">
+                      Текст отзыва
+                    </div>
+                    <textarea name="" id=""
+                    cols="30" rows="10" placeholder="Мне понравилось"
+                    class="form__input-elem form__input-elem--textarea"></textarea>
+                  </label>
+                </div>
+                <div class="form__buttons">
+                  <div class="form__buttons-photo">
+                    <div class="form__photo-title">Отображать фото в отзыве?</div>
+                    <div class="form__controlls">
+                      <label class="form__radio">
+                        <input type="radio" name="answer" class="form__radio-real">
+                        <div class="form__radio-visible"></div>
+                        <div class="form__radio-text">Да</div>
+                      </label>
+                      <label class="form__radio">
+                        <input type="radio" name="answer" class="form__radio-real">
+                        <div class="form__radio-visible"></div>
+                        <div class="form__radio-text">Нет</div>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form__buttons-submit">
+                    <button type="reset" class="btn btn--reset">Очистить</button>
+                    <button type="submit" class="btn btn--submit">Отправить</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
       </section>
       <footer class="footer">

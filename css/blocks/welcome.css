@@ -1,0 +1,49 @@
+.welcome {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.welcome__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  animation: rotate 0.7s 0.5s;
+}
+
+.welcome__container:hover .welcome__logo {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.welcome__logo {
+  margin-bottom: 30px;
+  opacity: 0.8;
+}
+
+@keyframes rotate {
+  15%,
+  45%,
+  75% {
+    transform: rotate(-15deg);
+  }
+  0% {
+    opacity: 0;
+    transform: scale(0.1);
+  }
+  30% {
+    transform: rotate(15deg);
+  }
+  60% {
+    transform: rotate(15deg);
+  }
+  90% {
+    transform: rotate(15deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
